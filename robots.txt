@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://positanogroup.com/sitemap.xml
