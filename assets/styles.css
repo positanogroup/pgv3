@@ -1186,7 +1186,17 @@ section {
   background: var(--a-ink);
   color: var(--a-cream);
 }
-.beliefs .meta { color: var(--a-clay); margin-bottom: 36px; }
+.beliefs .section-meta { color: var(--a-clay); margin-bottom: 20px; }
+.beliefs-title {
+  font-family: var(--font-serif);
+  font-size: clamp(34px, 5vw, 52px);
+  line-height: 1.05;
+  font-weight: 500;
+  color: var(--a-cream);
+  margin-bottom: 56px;
+  max-width: 720px;
+}
+.beliefs-title .accent { color: var(--a-sage-light); font-style: italic; }
 .beliefs-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
