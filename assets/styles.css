@@ -117,7 +117,7 @@ input, textarea, select { font: inherit; color: inherit; }
 }
 .nav-logo {
   width: 150px;
-  color: var(--a-ink);
+  color: var(--a-sage);
 }
 .nav-logo svg { width: 100%; height: auto; }
 .nav-tag {
@@ -147,7 +147,7 @@ input, textarea, select { font: inherit; color: inherit; }
   font-size: 10px;
   color: var(--a-sage);
 }
-.nav-cta {
+.nav-links a.nav-cta {
   margin-left: 16px;
   background: var(--a-ink);
   color: var(--a-cream);
@@ -157,7 +157,7 @@ input, textarea, select { font: inherit; color: inherit; }
   display: inline-flex; align-items: center; gap: 10px;
   transition: background 0.2s, transform 0.2s;
 }
-.nav-cta:hover { background: var(--a-sage-deep); transform: translateY(-1px); }
+.nav-links a.nav-cta:hover { background: var(--a-sage-deep); color: var(--a-cream); transform: translateY(-1px); }
 
 /* Hamburger */
 .nav-toggle {
@@ -1189,7 +1189,7 @@ section {
 .beliefs .meta { color: var(--a-clay); margin-bottom: 36px; }
 .beliefs-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .belief {
   padding: 36px 24px;

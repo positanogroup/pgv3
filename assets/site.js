@@ -89,9 +89,13 @@
           holder.style.height = '700px';
           shell.innerHTML = '';
           shell.appendChild(holder);
-          if (window.Calendly && window.Calendly.initInlineWidgets) {
-            window.Calendly.initInlineWidgets();
-          }
+          // Give the DOM a tick, then initialize. Calendly scans for
+          // .calendly-inline-widget elements when initInlineWidgets runs.
+          setTimeout(function () {
+            if (window.Calendly && window.Calendly.initInlineWidgets) {
+              window.Calendly.initInlineWidgets();
+            }
+          }, 50);
         });
       });
     });
